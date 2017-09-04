@@ -1,0 +1,30 @@
+﻿<div>
+    <div>click in leg to start an emergency or stop</div>
+    <div>
+        <div class="div-leg-conteiner"><leg-sumary-directive leg="legs[0]" ng-click="emergencyClick(legs[0])" /></div>
+    <div class="div-leg-conteiner"><leg-sumary-directive leg="legs[1]" ng-click="emergencyClick(legs[1])" /></div>
+    <div class="div-leg-conteiner"><leg-sumary-directive leg="legs[2]" ng-click="emergencyClick(legs[2])" /></div>
+        <div class="div-leg-conteiner"><leg-sumary-directive leg="legs[3]" ng-click="emergencyClick(legs[3])" /></div>
+    </div>
+
+    <div class="second-row">
+        <div style="overflow:auto;">
+            <h3 ><u>Logs of Tower :</u></h3>
+            <div ng-repeat="message in towerLogs">
+                {{message}}
+            </div>
+        </div>
+    </div>
+ 
+    <div class="second-row">
+        <div>
+            <div class="div-leg-conteiner-inner"><leg-sumary-directive leg="legs[7]" ng-click="emergencyClick(legs[7])" /></div>
+            <div class="div-leg-conteiner-inner"><leg-sumary-directive leg="legs[4]" ng-click="emergencyClick(legs[4])" /></div>
+        </div>
+        <div>
+            <div class="div-leg-conteiner-inner"><leg-sumary-directive leg="legs[6]" ng-click="emergencyClick(legs[6])"/></div>
+            <div class="div-leg-conteiner-inner"><leg-sumary-directive leg="legs[5]" ng-click="emergencyClick(legs[5])" /></div>
+        </div>
+    </div>
+    
+</div>

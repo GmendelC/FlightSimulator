@@ -1,0 +1,20 @@
+﻿<div class="leg-conteiner" ng-class="{'emergency-leg' :currentleg.InEmergency }">
+    <div>
+        Leg id: {{currentleg.Id}} 
+        <br />
+        leg type : {{currentleg.LegType | int2state}}
+        <br />
+        In Emrgency : {{currentleg.InEmergency}}
+    </div>
+    <div ng-repeat="plane in currentleg.InPlanes" 
+         ng-class="{ 'inner-planes-conteiner' : true, 'emergency-plane' : plane.Emergency}">
+        <div>
+            Inner plane - id : {{plane.Id}}
+            <div class="inner-planes-conteiner-description">
+                Time in leg : {{plane.EnterStateTime | date2seconds}}
+                <br />
+                In Emrgency : {{plane.Emergency}}
+            </div>
+        </div>
+    </div>
+</div>

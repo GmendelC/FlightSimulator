@@ -1,0 +1,8 @@
+﻿<tr>
+    <td>{{model.id}}</td>
+    <td>{{model.destination | bool2destination}}</td>
+    <td>{{model.inLand | bool2airState}}</td>
+    <td>{{model.State}}</td>
+    <td>{{model.emergency}}</td>
+    <td ng-click="emegencyFunk(model)"> set emergency </td>
+</tr>
