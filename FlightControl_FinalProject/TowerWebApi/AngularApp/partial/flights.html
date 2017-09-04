@@ -1,0 +1,34 @@
+﻿
+<div>
+    <div>
+        <div class="seach-bar">
+            Search: <input ng-model="search.$"/>
+        </div>
+    </div>
+    <div>
+        <button class="refresh-button" ng-click="refresh();">Refresh</button>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>Plane id</th>
+            <th>Destination</th>
+            <th>air state</th> 
+            <th>leg state</th>
+            <th>emergency</th>
+            <th>set emergency</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="plane in flights | filter:search" ng-class="{'row-plane-emergency' : plane.Emergency}">
+                <td>{{plane.Id}}</td>
+                <td>{{plane.Destination | bool2destination}}</td>
+                <td>{{plane.InLand | bool2airState}}</td>
+                <td>{{plane.State | int2state}}</td>
+                <td>{{plane.Emergency}}</td>
+                <td ><button ng-click="emegencyFunk(plane)">set</button>  </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            <!--<plane-row-directive ng-repeat="plane in flights | filter:search" dirPlane="plane"/>-->

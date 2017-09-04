@@ -1,0 +1,45 @@
+﻿table, th, td {
+    border: 1px solid;
+}
+.second-row {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.row-plane-emergency {
+    color: red;
+}
+
+.div-leg-conteiner {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+}
+
+.div-leg-conteiner-inner {
+    width: 45%;
+    height: 20%;
+    display: inline-block;
+}
+
+.leg-conteiner {
+    border: solid;
+    overflow: auto;
+}
+
+.emergency-leg {
+    border-color: red;
+}
+
+.inner-planes-conteiner{
+    border:solid;
+    overflow:auto;
+}
+
+.emergency-plane {
+    color: red;
+}
+.inner-planes-conteiner-description {
+    overflow: auto;
+}
