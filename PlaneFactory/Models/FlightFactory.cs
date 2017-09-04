@@ -31,7 +31,7 @@ namespace PlaneFactory.Models
         private Timer _timer;
 
         private HttpSenderService _sender;
-        private const double INTERVAL_MILISENCOUDS = 100;
+        private const double INTERVAL_MILISENCOUDS =2000;
 
         private FlightFactory()
         {

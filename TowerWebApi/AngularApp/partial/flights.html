@@ -22,7 +22,7 @@
         <tbody>
             <tr ng-repeat="plane in flights | filter:search" ng-class="{'row-plane-emergency' : plane.Emergency}">
                 <td>{{plane.Id}}</td>
-                <td>{{plane.Destination | bool2destination}}</td>
+                <td>{{plane.DestinationOut | bool2destination}}</td>
                 <td>{{plane.InLand | bool2airState}}</td>
                 <td>{{plane.State | int2state}}</td>
                 <td>{{plane.Emergency}}</td>

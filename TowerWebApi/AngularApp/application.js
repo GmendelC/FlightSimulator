@@ -1,4 +1,4 @@
-﻿angular.module('TowerControl', ['angular-loading-bar', 'ngAnimate', 'SignalR', 'ngRoute'])
+﻿angular.module('TowerControl', ['angular-loading-bar', 'ngAnimate', 'SignalR', 'ngRoute', 'ngSanitize'])
     .config(function ($routeProvider, $locationProvider) {
 
         $routeProvider

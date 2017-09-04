@@ -129,6 +129,7 @@
     <Content Include="AngularApp\controllers\legsCotroller.js" />
     <Content Include="AngularApp\directive\legSumaryDirective.js" />
     <Content Include="AngularApp\directive\planeRowDirective.js" />
+    <Content Include="AngularApp\fliter\airEmergency2string.js" />
     <Content Include="AngularApp\fliter\bool2airState.js" />
     <Content Include="AngularApp\fliter\bool2destination.js" />
     <Content Include="AngularApp\fliter\date2seconds.js" />

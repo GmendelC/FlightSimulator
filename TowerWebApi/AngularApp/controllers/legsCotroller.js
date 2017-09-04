@@ -4,6 +4,7 @@
 
         var legs;
         $scope.towerLogs = [];
+        $scope.airEmergency;
 
             function refresh() {
                 dataService.getLegs().then(function (dataLegs) {
@@ -12,6 +13,11 @@
                         return a.Id - b.Id;
                     });
                     $scope.legs = legs;
+                });
+                dataService.getPlanes().then(function (dataPlanes) {
+                    var havePlaneEmergency = dataPlanes.some(
+                        function (plane) { return plane.Emergency; });
+                    $scope.airEmergency = havePlaneEmergency;
                 });
             };
 

@@ -1,5 +1,7 @@
 ﻿<div>
     <div>click in leg to start an emergency or stop</div>
+    <div ng-bind-html="airEmergency | airEmergency2string">
+    </div>
     <div>
         <div class="div-leg-conteiner"><leg-sumary-directive leg="legs[0]" ng-click="emergencyClick(legs[0])" /></div>
     <div class="div-leg-conteiner"><leg-sumary-directive leg="legs[1]" ng-click="emergencyClick(legs[1])" /></div>
