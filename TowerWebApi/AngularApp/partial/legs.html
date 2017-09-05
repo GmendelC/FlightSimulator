@@ -1,6 +1,7 @@
 ﻿<div>
     <div>click in leg to start an emergency or stop</div>
-    <div ng-bind-html="airEmergency | airEmergency2string">
+    <div class="panel panel-default" ng-class="{'panel-info':!airEmergency , 'panel-warning':airEmergency}">
+        <div class="panel-body" ng-bind-html="airEmergency | airEmergency2string"></div>
     </div>
     <div>
         <div class="div-leg-conteiner"><leg-sumary-directive leg="legs[0]" ng-click="emergencyClick(legs[0])" /></div>

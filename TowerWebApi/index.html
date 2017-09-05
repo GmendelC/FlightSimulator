@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js'></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <!--app scripts-->
     <script src="AngularApp/application.js"></script>
     <script src="AngularApp/controllers/flightController.js"></script>
@@ -41,15 +45,19 @@
 
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-inner">
-            <a href="#/legs">AirportLegs</a>
-            <a href="#/flights">FlightList</a>
-            <a href="#/about">About</a>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Flight simulator</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#/legs">AirportLegs</a></li>
+                <li><a href="#/flights">FlightList</a></li>
+                <li><a href="#/about">About</a></li>
+            </ul>
         </div>
-    </div>
-
+    </nav>
+    
     <ng-view></ng-view>
-
 </body>
 </html>
